@@ -1,0 +1,73 @@
+.hero {
+    box-sizing: border-box;
+    // .hero__wrap
+    padding: 40px 0 80px;
+    box-sizing: border-box;
+    &__wrap {
+        background-color: $color;
+        color: #fff;
+        border-radius: 30px;
+        box-sizing: border-box;
+        padding: 70px;
+        background-image: url(/assets/imgs/dna1.png);
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: 130% 90%;
+    }
+
+    // .hero__title
+
+    &__title {
+        margin-bottom: 40px;
+        h1 {
+            font-size: 36px;
+            max-width: 980px;
+            margin: 0;
+            line-height: 1.1;
+        }
+    }
+
+    // .hero__items
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        margin-bottom: 40px;
+        .item {
+            width: calc(50% - 30px);
+            box-sizing: border-box;
+            background-color: #fff;
+            color: $color;
+            font-weight: 700;
+            margin: 0 15px 30px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+        }
+    }
+
+    // .hero__bot
+
+    &__bot {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        span {
+            display: block;
+            text-align: left;
+            font-size: 18px;
+            max-width: 480px;
+        }
+        .action {
+            .main-btn {
+                font-size: 18px;
+                padding: 20px 40px;
+                background-color: #ffffff30;
+                color: #fff;
+                max-width: none;
+                backdrop-filter: blur(5px);
+            }
+        }
+    }
+}

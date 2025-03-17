@@ -1,0 +1,61 @@
+
+.about {
+    padding: 40px 0;
+    box-sizing: border-box;
+		// .about__title
+
+		&__title {
+		}
+
+		// .about__wrap
+
+		&__wrap {
+            display: flex;
+            align-items: center;
+		}
+
+		// .about__img
+
+		&__img {
+            width: 40%;
+            margin-right: 30px;
+            img {
+                display: block;
+                max-width: 100%;
+                overflow: hidden;
+                border-radius: 10px;
+            }
+		}
+
+		// .about__text
+
+		&__text {
+            width: 60%;
+            text-align: right;
+            h2 {
+                margin: 0;
+                font-size: 24px;
+                display: block;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 16px;
+                margin: 0;
+                margin-bottom: 20px;
+            }
+            .main-btn {
+                border: 1px solid $color;
+                color: $color;
+                background-color: transparent;
+            }
+		}
+}
+.section {
+
+		// .section__title-wrap
+
+		&__title-wrap {
+		}
+}
+.section-title {
+}
