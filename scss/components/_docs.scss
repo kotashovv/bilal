@@ -1,0 +1,50 @@
+.docs {
+
+    // .docs__title
+
+    &__title {
+    }
+
+    // .docs__slider
+
+    &__slider {
+    }
+
+    // .docs__slider-wrap
+
+    &__slider-wrap {
+    }
+
+    // .docs__slider-slide
+
+    &__slider-slide {
+        box-sizing: border-box;
+        padding: 15px;
+        border: 1px solid #00000010;
+        border-radius: 10px;
+        img {
+            max-width: 100%;
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.container {
+}
+.section {
+
+    // .section__title-wrap
+
+    &__title-wrap {
+    }
+}
+.section-title {
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
