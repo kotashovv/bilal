@@ -16,6 +16,18 @@
     &__slider-wrap {
     }
 
+    &__action {
+        display: flex;
+        margin-top: 10px;
+        button {
+            margin-left: auto;
+            max-width: fit-content;
+            border: 1px solid $color;
+            color: $color;
+            background-color: transparent;
+        }
+    }
+
     // .reviews__slider-item
 
     &__slider-item {
@@ -49,18 +61,4 @@
         }
     }
 }
-.container {
-}
-.section {
-
-    // .section__title-wrap
-
-    &__title-wrap {
-    }
-}
-.section-title {
-}
-.reason {
-}
-
 
