@@ -57,5 +57,56 @@
 		&__title-wrap {
 		}
 }
-.section-title {
+
+
+@media(max-width:768px) {
+    .about {
+        &__wrap {
+            width: 100%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        &__text {
+            margin: 0;
+            width: 100%;
+            max-width: none;
+            box-sizing: border-box;
+            text-align: left;
+            .for-mobile-about {
+                width: 100%;
+            }
+            .about__img {
+                width: 100%;
+                box-sizing: border-box;
+                margin: 10px 0;
+                height: 280px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+
+    }
+}
+
+@media(max-width:560px) {
+    .about {
+        &__text {
+            h2 {
+                font-size: 18px;
+            }
+
+           
+        }
+        &__action {
+            .main-btn {
+                max-width: none;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    }
 }

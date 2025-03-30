@@ -60,6 +60,7 @@
             max-width: 480px;
         }
         .action {
+            margin-left: 20px;
             .main-btn {
                 font-size: 18px;
                 padding: 20px 40px;
@@ -67,6 +68,73 @@
                 color: #fff;
                 max-width: none;
                 backdrop-filter: blur(5px);
+            }
+        }
+    }
+}
+
+
+@media(max-width:768px){
+    .hero {
+        &__wrap {
+            padding: 35px;
+        }
+        &__title {
+            margin-bottom: 30px;
+            h1 {
+                font-size: 28px;
+            }
+        }
+
+        &__items {
+            .item {
+                margin: 0 0 15px;
+                width: 100%;
+                box-sizing: border-box;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+
+    }
+}
+
+@media(max-width:560px) {
+    .hero {
+        padding: 40px 0 40px;
+        &__wrap {
+            text-align: center;
+            padding: 35px 20px;
+        }
+        &__title {
+            h1 {
+                font-size: 24px;
+            }
+        }
+        &__items {
+            margin: 0 0 30px;
+        }
+        &__bot {
+            flex-direction: column;
+            align-items: center;
+            .item {
+                span {
+                    text-align: center;
+                }
+            }
+            .action {
+                margin-left: 0;
+                width: 100%;
+                overscroll-behavior-block: xb
+                ;
+                margin-top: 20px;
+                button.main-btn {
+                    max-width: none;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
             }
         }
     }

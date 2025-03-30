@@ -79,12 +79,20 @@
     }
 }
 
-.section-title {}
-
-.title {}
-
-.text {}
-
-.action {}
-
-.main-btn {}
+@media(max-width:640px) {
+    .services {
+        &__items {
+            display: flex;
+            flex-direction: column;
+        }
+        &__item {
+            .action {
+                .main-btn {
+                    max-width: none;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+}

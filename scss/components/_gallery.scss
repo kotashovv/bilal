@@ -1,0 +1,33 @@
+.gallery {
+    box-sizing: border-box;
+    padding: 40px 0;
+    // .gallery__title
+
+    &__title {
+    }
+
+    // .gallery__slider
+
+    &__slider {
+    }
+
+    // .gallery__slider-wrapper
+
+    &__slider-wrapper {
+        align-items: stretch;
+    }
+
+    // .gallery__slider-slide
+
+    &__slider-slide {
+        display: flex;
+        overflow: hidden;
+        border-radius: 10px;
+        img {
+            width: 100%;
+            box-sizing: border-box;
+            height: 360px;
+            object-fit: cover;
+        }
+    }
+}
