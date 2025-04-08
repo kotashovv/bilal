@@ -1,0 +1,106 @@
+.table-container {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #0066CC;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-align: left;
+    &:nth-child(2) {
+        text-align: center;
+    }
+    &:last-child {
+        text-align: center;
+    }
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e6f2ff;
+}
+
+.accent {
+    color: #0066CC;
+    font-weight: bold;
+}
+
+.content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #0066CC;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.norm-results {
+    background-color: #e6f2ff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.norm-results table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.norm-results th, .norm-results td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.norm-results th {
+    background-color: #0066CC;
+    color: white;
+}
+
+.faq {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.faq h3 {
+    font-size: 18px;
+    color: #0066CC;
+}
+
+.faq p {
+    font-size: 16px;
+}
