@@ -48,6 +48,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const gallerySlider = new Swiper('.gallery__slider', {
         slidesPerView: 3,
         spaceBetween: 15,
+        pagination: {
+            el: '.gallery__slider .swiper-pagination'
+        },
         breakpoints: {
             0: {
                 slidesPerView: 1.1,

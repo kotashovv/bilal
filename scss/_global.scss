@@ -112,3 +112,20 @@ body {
         }
     }
 }
+
+.notice-wrap {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid $color;
+    border-radius: 10px;
+    padding: 40px 30px;
+    .main-btn {
+        max-width: 480px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
