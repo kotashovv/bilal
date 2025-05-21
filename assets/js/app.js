@@ -67,4 +67,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
         }
     })
+
+    const newService = new Swiper('.new-services__slider-swiper', {
+        autoHeight: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+    })
 })

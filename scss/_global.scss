@@ -7,7 +7,6 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f5f5f5;
 }
 
 
@@ -16,6 +15,7 @@ body {
     margin-bottom: 40px;
     max-width: 620px;
     margin-right: auto;
+
     p {
         display: block;
         font-size: 16px;
@@ -26,23 +26,26 @@ body {
 }
 
 .section__title-wrap {
-    margin-bottom: 40px;    
+    margin-bottom: 40px;
     position: relative;
     padding-left: 20px;
+
     &::before {
         content: '';
         position: absolute;
-        left: 0;
-        top: 0;
-        width: 5px;
+        left: 10px;
+        bottom: -15px;
+        width: 160px;
+        z-index: -1;
+        box-sizing: border-box;
         height: 100%;
-        background-color: $color;
+        background-color: #bbdefb70;
     }
 }
 
 .section-title {
     font-size: 32px;
-    color: #000;
+    color: $accent;
     margin: 0;
     display: block;
     width: fit-content;
@@ -59,14 +62,18 @@ body {
     text-decoration: none;
     border-radius: 8px;
     transition: .35s ease;
-    background-color: $color;
+    background-color: $accent;
     color: $white;
     font-size: 18px;
     cursor: pointer;
+    color: #fff;
+
     &.reverse {
         background-color: #fff;
         color: $color;
+        border: 1px solid $color;
     }
+
     &:hover {
         background-color: $white;
         color: $color;
@@ -76,29 +83,38 @@ body {
 .breadcrumbs {
     padding: 30px 0 20px;
     box-sizing: border-box;
+
     &__wrap {
         display: flex;
         flex-wrap: wrap;
+
         a {
             display: block;
             color: $color;
             text-decoration: none;
             margin-right: 20px;
-            &:last-child{
-                 margin-right: 0;
-                 &::before {
+
+            &:last-child {
+                margin-right: 0;
+
+                &::before {
                     display: none;
-                 }
-                 color: #000;
-                 pointer-events: none;
-                 &:hover {
+                }
+
+                color: #000;
+                pointer-events: none;
+
+                &:hover {
                     text-decoration: none;
-                 }
+                }
             }
+
             position: relative;
+
             &:hover {
                 text-decoration: underline;
             }
+
             &::before {
                 content: '';
                 position: absolute;
@@ -123,6 +139,7 @@ body {
     border: 1px solid $color;
     border-radius: 10px;
     padding: 40px 30px;
+
     .main-btn {
         max-width: 480px;
         width: 100%;

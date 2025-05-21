@@ -1,29 +1,42 @@
 .hero {
     box-sizing: border-box;
     // .hero__wrap
-    padding: 40px 0 80px;
+    padding: 70px 0 80px;
     box-sizing: border-box;
-    &__wrap {
-        background-color: $color;
-        color: #fff;
-        border-radius: 30px;
-        box-sizing: border-box;
-        padding: 70px;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content: '';
+        position: absolute;
+        right: -5%;
+        top: -15%;
         background-image: url(../../assets/imgs/dna1.png);
-        background-size: 70%;
+        width: 40%;
+        height: 100%;
+        background-size: contain;
         background-repeat: no-repeat;
-        background-position: 130% 90%;
+        background-position: right top;
+    }
+
+    &__wrap {
+        position: relative;
     }
 
     // .hero__title
 
     &__title {
         margin-bottom: 40px;
+        max-width: 860px;
         h1 {
             font-size: 36px;
             max-width: 980px;
             margin: 0;
             line-height: 1.1;
+            color: #0d47a1;
+        }
+        p {
+            font-size: 16px;
         }
     }
 
@@ -32,18 +45,23 @@
     &__items {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 -15px;
-        margin-bottom: 40px;
+        margin: 0 -5px;
+        max-width: 720px;
         .item {
-            width: calc(50% - 30px);
+            width: calc(50% - 10px);
             box-sizing: border-box;
             background-color: #fff;
-            color: $color;
             font-weight: 700;
-            margin: 0 15px 30px;
+            margin: 0 5px 10px;
             padding: 15px;
             text-align: center;
             border-radius: 8px;
+             color: #0d47a1;
+             text-decoration: none;
+             transition: .35s ease;
+             &:hover {
+                background-color: #0d48a10a;
+             }
         }
     }
 
@@ -51,8 +69,8 @@
 
     &__bot {
         display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
         span {
             display: block;
             text-align: left;
@@ -60,27 +78,25 @@
             max-width: 480px;
         }
         .action {
-            margin-left: 20px;
             .main-btn {
-                font-size: 18px;
-                padding: 20px 40px;
-                background-color: #ffffff30;
+                background-color: #0d47a1;
                 color: #fff;
-                max-width: none;
-                backdrop-filter: blur(5px);
+                padding: 10px 25px;
             }
         }
     }
 }
 
 
-@media(max-width:768px){
+@media(max-width:768px) {
     .hero {
         &__wrap {
             padding: 35px;
         }
+
         &__title {
             margin-bottom: 30px;
+
             h1 {
                 font-size: 28px;
             }
@@ -91,12 +107,13 @@
                 margin: 0 0 15px;
                 width: 100%;
                 box-sizing: border-box;
+
                 &:last-child {
                     margin-bottom: 0;
                 }
             }
         }
-        
+
 
     }
 }
@@ -104,32 +121,38 @@
 @media(max-width:560px) {
     .hero {
         padding: 40px 0 40px;
+
         &__wrap {
             text-align: center;
             padding: 35px 20px;
         }
+
         &__title {
             h1 {
                 font-size: 24px;
             }
         }
+
         &__items {
             margin: 0 0 30px;
         }
+
         &__bot {
             flex-direction: column;
             align-items: center;
+
             .item {
                 span {
                     text-align: center;
                 }
             }
+
             .action {
                 margin-left: 0;
                 width: 100%;
-                overscroll-behavior-block: xb
-                ;
+                overscroll-behavior-block: xb;
                 margin-top: 20px;
+
                 button.main-btn {
                     max-width: none;
                     width: 100%;

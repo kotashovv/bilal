@@ -29,14 +29,23 @@
     // .reviews__slider-item
 
     &__slider-item {
-        background-color: $color;
-        color: #fff;
+        background-color: $lite;
+        color: $black;
         padding: 30px 20px;
         box-sizing: border-box;
         border-radius: 10px;
 
         .reason {
-            font-size: 14px;
+            font-size: 16px;
+            font-weight: 600;
+            
+        }
+
+        .rating {
+            margin: 10px 0;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
         }
 
         .date {
@@ -57,7 +66,7 @@
 
         .text {
             p {
-                font-size: 18px;
+                font-size: 14px;
                 margin: 0;
                 padding: 0;
             }

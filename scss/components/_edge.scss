@@ -1,31 +1,56 @@
 .edge {
-    &__slider-item {
+    padding: 40px 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    // .edge__items
+
+    &__items {
         display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
+        align-items: stretch;
+        margin: 0 -5px -10px;
+    }
+
+    // .edge__item
+
+    &__item {
+        width: calc(25% - 10px);
+        margin: 0 5px 10px;
         box-sizing: border-box;
-        padding-inline: 10px 15px;
-        .img {
-            width: 90px;
-            height: 90px;
-            margin: 0 auto 15px;
-            img {
-                width: 100%;
-                height: 100%s;
-                object-fit: contain;
+        padding: 20px 10px;
+        border-radius: 8px;
+        display: flex;
+        align-items: flex-start;
+        background-color: #bbdefbc4;
+
+        .decor {
+            svg {
+                width: 30px;
+                height: 30px;
                 display: block;
             }
-
+            margin-right: 15px;
         }
-        span {
-            display: block;
-            max-width: 240px;
-            width: 100%;
-            margin: 0 auto;
-            font-size: 14px;
-            font-weight: 500;
-            color: $black;
+
+        .text {
+            p {
+                margin: 0;
+                box-sizing: border-box;
+                font-weight: 500;
+                line-height: 1.2;
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+            span {
+                font-size: 14px;
+                background-origin: xb
+                ;
+            }
         }
     }
 }
+
+.container {}
+
+.decor {}
+
+.text {}
